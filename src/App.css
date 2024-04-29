@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+section.App {
+  background-color: rgb(34, 34, 34) !important;
+  background-image: radial-gradient(circle at 50%, rgba(38, 240, 176, 0.251), transparent);
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 6em;
+}
+#root {
+  align-items: center;
+  display: grid;
+}
+
+.navigation {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-image: radial-gradient(circle at 50%, rgba(38, 240, 176, 0.8), transparent);
+  z-index: 20000;
+}
+
+.navbar-brand {
+  padding-left: 4em;
+  font-size: 2em !important;
+}
+
+.navLink {
+  padding-right: 4em;
+  font-size: 28px;
+  font-family: 'Caveat', sans-serif;
+}
+
+.footer {
+  position: absolute !important;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-image: radial-gradient(circle at 50%, rgba(38, 240, 176, .8), transparent);
+}
+
+a.navbar-brand {
+  font-family: 'Caveat', sans-serif;
+  font-weight: 300;
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+section.toDos {
+    z-index: 10000;
+    position: relative;
+    size: 100%;
+}
+
+article.toDos{    
+    background-image: radial-gradient(circle at 50%, rgba(38, 240, 176, .75), transparent);
+}
+
+article.toDos h1{
+    color: #fff;
+    font-family: 'Caveat', sans-serif;
+}
+
+thead.toDo {
+    background-color: rgba(38, 240, 176, .8);
+}
+
+button.btn-outline-info {
+    --bs-btn-border-color: rgba(38, 240, 176, .8);
+    --bs-btn-color: #fff;    
+    --bs-btn-hover-bg: rgba(38, 240, 176, .8);
+    --bs-btn-hover-border-color: #000;
+}
+
+span.checkMark {
+    color: #fff;
+}
+
+div.toDoModal {
+    position: absolute;
+    z-index: 50000;
+}
+
+div.modal-content{
+    background-color: #000;
+    background-image: radial-gradient(circle at 50%, rgba(38, 240, 176, .4), transparent); 
+}
+
+.modal-header .btn-close {
+    --bs-btn-close-color: rgb(38, 240, 176) !important;
+}
+
+div.modal-header{
+    color: rgb(38, 240, 176);
+    border-bottom: 2px solid rgb(38, 240, 176);
+}
+
+div.toDoCreate{
+    background-color: none;
+    background-image: radial-gradient(circle at 50%, rgba(38, 240, 176, .4), transparent); 
+}
+
+#toDoTable {
+    opacity: .9;
+}

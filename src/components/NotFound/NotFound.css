@@ -1,0 +1,31 @@
+
+
+.error {
+    height: 750px;
+    width: 750px;
+    justify-content: center;
+    z-index: 1000;
+    position: relative;
+}
+
+.notFound a {
+    justify-content: center;
+    width: 50%;
+    display: flex;
+    border: 2px solid black;
+    z-index: 1000;
+    position: relative;
+}
+
+#btn-primary {
+    background-color: rgba(14, 80, 59, 0.8);
+    background-image: radial-gradient(circle at 50%, rgba(38, 240, 176, .8), transparent);
+    --bs-btn-border-color: none;
+}
+
+@media (max-width: 768px) {
+    .error{
+        height: 300px;
+        width: 300px;
+    }
+}

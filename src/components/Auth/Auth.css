@@ -1,0 +1,68 @@
+img.profileImg {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+#loginBtn {
+    color: black; 
+    background-color: rgba(38, 240, 176, 0.251);
+    border: 2px solid;
+    --bs-btn-border-color: black;
+}
+
+#logoutBtn {
+    color: black; 
+    background-color: rgba(38, 240, 176, 0.251);
+    border: 2px solid;
+    --bs-btn-border-color: black;
+}
+
+#loginBtn:hover {
+    background-color: rgb(38, 240, 176);
+}
+
+#logoutBtn:hover {
+    background-color: rgb(38, 240, 176);
+}
+
+div.container {
+    --bs-gutter-x: 0;
+}
+
+div.card {
+    background-color: rgba(38, 240, 176, 0.8);
+    border: none;
+}
+
+section.login {
+    position: relative;
+    justify-content: center;
+    display: grid;
+    top: -4vh;
+}
+
+iframe.login {
+    height: 575px;
+    width: 575px;
+    margin-top: 7em;
+}
+
+@media (max-width: 768px) {
+    iframe.login{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+#login {
+    display: inline-block;
+    animation: rotation 30s infinite linear;
+}
+  
+  @keyframes rotation {
+    100% {
+      transform: rotate(360deg);
+    }
+  }

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+#about{
+    position: relative;
+    z-index: 20000;
+}
+
+#aboutFrame {
+    width: 70vw;
+    height: 70vh;
+}
+
+#aboutText {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .3);
+    margin-top: 10em;
+    height: 50%;
+}
+
+#aboutText h1 {
+    font-family: 'Caveat', sans-serif;
+    font-size: 4em;
+    text-decoration: underline #26f0b0;
+}
+
+#aboutText p {
+    font-size: 1.5em;
+}
+
+#aboutText a {
+    color: rgb(38, 240, 176);
+}

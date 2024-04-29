@@ -1,0 +1,23 @@
+div.catModal {
+    position: absolute;
+    z-index: 50000;
+}
+
+div.modal-content{
+    background-color: #000;
+    background-image: radial-gradient(circle at 50%, rgba(38, 240, 176, .4), transparent); 
+}
+
+div.modal-header{
+    color: rgb(38, 240, 176);
+    border-bottom: 2px solid rgb(38, 240, 176);
+}
+
+div.catCreate{
+    background-color: none;
+    background-image: radial-gradient(circle at 50%, rgba(38, 240, 176, .4), transparent); 
+}
+
+#catTable {
+    opacity: .9;
+}
