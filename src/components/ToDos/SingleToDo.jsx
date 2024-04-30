@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { useAuth } from '../../contexts/AuthContext'
 import { useState } from 'react'
 import ToDoEdit from './ToDoEdit'
 import './ToDos.css'
@@ -7,6 +8,9 @@ export default function SingleToDo({toDo, getToDos}) {
     const { toDoId, name, done, category, categoryId } = toDo
 
     const [showEdit, setShowEdit] = useState(false);
+
+    const { currentUser } = useAuth();
+
     const flipDone = () => {
         let updatedToDo = {
             toDoId: toDoId,
@@ -36,10 +40,16 @@ export default function SingleToDo({toDo, getToDos}) {
           <td>{name}</td>
           <td>{done === false ? 'Incomplete' : 'complete' }</td>
           <td>{category.categoryName}</td>
-          <td>
-            <button onClick={() => setShowEdit(true)} className="btn btn-success mx-2">&#x270D;</button>
-            <button onClick={() => deleteToDo(toDoId)} className="btn btn-danger">&#10007;</button>
+          {currentUser.email === import.meta.env.VITE_ADMIN_EMAIL ?
+            <td>
+              <button onClick={() => setShowEdit(true)} className="btn btn-success mx-2">&#x270D;</button>
+              <button onClick={() => deleteToDo(toDoId)} className="btn btn-danger">&#10007;</button>
+            </td> :
+            <td>
+            <button disabled className="btn btn-success mx-2">&#x270D;</button>
+            <button disabled className="btn btn-danger">&#10007;</button>
           </td>
+          }    
       </tr>
       <ToDoEdit showEdit={showEdit} setShowEdit={setShowEdit} getToDos={getToDos} toDo={toDo} />
     </>

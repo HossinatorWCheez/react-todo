@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
 section.App {
-  background-color: rgb(34, 34, 34) !important;
-  background-image: radial-gradient(circle at 50%, rgba(38, 240, 176, 0.251), transparent);
+  /* background-color: rgb(34, 34, 34) !important;
+  background-image: radial-gradient(circle at 50%, rgba(38, 240, 176, 0.251), transparent); */
   justify-content: center;
   height: 100vh;
   width: 100vw;
   padding-top: 6em;
 }
+
+#bg-video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  left: 0;
+  top: 0;
+}
+
 #root {
   align-items: center;
   display: grid;

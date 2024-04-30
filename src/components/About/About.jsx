@@ -2,7 +2,7 @@ import './About.css'
 
 export default function About() {
   return (
-    <div id='about' className="row">
+    <div id='about' className="row w-100">
       <div className="col-md-6 text-center">
         <iframe id='aboutFrame' src="https://lottie.host/embed/cd24663c-6292-428b-8395-f2190963084c/NodrLdD5FM.json"></iframe>
       </div>
